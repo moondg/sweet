@@ -26,7 +26,8 @@ class Drawer:
         self.ax.clear()
         self.ax.axvline(data.attachZ[data.linStart], color='r', linestyle='dashed')
         self.ax.axvline(data.attachZ[data.linEnd], color='b', linestyle='dashed')
-        self.ax.scatter(data.attachZ,data.attachSignal,s=3)
+        self.ax.scatter(data.attachZ,data.attachSignal,s=3,color='orange')
+        self.ax.scatter(data.detachZ,data.detachSignal,s=3,color='g')
         self.ax.set_title(f'{data.fileName}')
         self.fig.canvas.draw_idle()
 
