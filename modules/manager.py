@@ -1,5 +1,6 @@
 import matplotlib
 import matplotlib.pyplot as plt
+import os
 
 from modules.data import Data
 from modules.findData import findData
@@ -35,6 +36,8 @@ class Manager():
         self.drawer.draw(self.datas[self.idx])
 
     def save(self):
+        if not os.listdir(os.getcwd()).__contains__('analysis'):
+            os.mkdir(os.path.join(os.getcwd(),'analysis'))
         save(datas=self.datas,nameAs=self.dir)
 
     def isNextAvailable(self) -> bool: return self.idx < len(self.datas) - 1
