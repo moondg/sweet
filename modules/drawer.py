@@ -10,7 +10,7 @@ class Drawer:
         slider_ax = self.fig.add_axes([0.35, 0.17, 0.45, 0.03])
         self.gt_slider = Slider(slider_ax, 'Gradient Thdsreshold', 0, 0.1, valinit=p.gradient_threshold)
         slider_ax = self.fig.add_axes([0.35, 0.12, 0.45, 0.03])
-        self.ct_slider = Slider(slider_ax, 'Curvature Thdsreshold', 0, 1, valinit=p.curvature_threshold)
+        self.ct_slider = Slider(slider_ax, 'Curvature Thdsreshold', 0, 0.5, valinit=p.curvature_threshold)
         slider_ax = self.fig.add_axes([0.35, 0.07, 0.45, 0.03])
         self.msr_slider = Slider(slider_ax, 'Minimum-Searching Range', 1, 100, valinit=p.minimum_search_range, valstep=1)
         slider_ax = self.fig.add_axes([0.35, 0.02, 0.45, 0.03])
@@ -27,7 +27,7 @@ class Drawer:
         self.ax.axvline(data.attachZ[data.linStart], color='r', linestyle='dashed')
         self.ax.axvline(data.attachZ[data.linEnd], color='b', linestyle='dashed')
         self.ax.scatter(data.attachZ,data.attachSignal,s=3,color='orange')
-        self.ax.scatter(data.detachZ,data.detachSignal,s=3,color='g')
+        self.ax.scatter(data.detachZ,data.detachSignal,s=3,color='black',alpha=0.05)
         self.ax.set_title(f'{data.fileName}')
         self.fig.canvas.draw_idle()
 
