@@ -38,7 +38,7 @@ data
 manager = Manager(r"25.04.15/pfoa/2")
 ```
 
-3. Cells can be run with `Shift + Enter`. Run the cells in `program.ipynb` from top to bottom — execution order matters. Or, you can simply click ***Restart*** -> ***Run All***.
+3. Cells can be run with `Shift + Enter`. Run the cells in `program.ipynb` from top to bottom — execution order matters. Or, you can simply click ***Restart*** → ***Run All***.
 
 
 ## How to set parameters
@@ -51,7 +51,7 @@ The linear traversal is performed from the far right of the attach signal graph.
 
 ### Tips
 
-The outcome of the program’s analysis depends on the quality and characteristics of the input data. If the probe speed is measured too fast or too slow, the linear region may not be properly detected. You can adjust the `curvature_threshold` to determine the start of the linear increase region, and the `gradient_threshold` to determine its end. The quality of the data is directly proportional to the ease of analysis. With high-quality data, the program can perform well without the need to tweak parameters—this will likely benefit your research as well!
+The outcome of the program’s analysis depends on the quality and characteristics of the input data. If the probe speed is measured too fast or too slow, the linear region may not be properly detected. This is normal and that's why you can control parameters. You can adjust the `curvature_threshold` to determine the start of the linear increase region, and the `gradient_threshold` to determine its end. The quality of the data is directly proportional to the ease of analysis. With high-quality data, the program can perform well without the need to tweak parameters—this will likely benefit your research as well!
 
 ***Artificially adjusting parameters to force analysis on low-quality data is not recommended. This program is designed to reduce analysis time, not experimental time. Please keep that in mind.***
 
@@ -72,3 +72,8 @@ This is because your computer does not have a specific package — in this case,
 # !pip install numpy
 ```
 `!pip install SPECIFIC_PACKAGE_NAME` installs a specific package on your computer. Remove the `#` and run the cell with `Shift + Enter`. You may want to add the `#` back after installing packages.
+
+## Buster call
+Open the ***GitHub Issues***.
+
+***GitHub Repository*** → ***Issues*** → ***New issue***
