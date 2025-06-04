@@ -21,16 +21,16 @@ data
 │   ├── pfoa
 │   │   ├── 1
 │   │   │   ├── 032410023904.dat
-│   │   │   ├── 032410023915.dat
+│   │   │   └── 032410023915.dat
 │   │   ├── 2
 │   │   │   ├── 032410024828.dat
-│   │   │   ├── 032410024857.dat
+│   │   │   └── 032410024857.dat
 │   │   ├── 3
 │   │   │   ├── 032410031711.dat
-│   │   │   ├── 032410031758.dat
+│   │   │   └── 032410031758.dat
 │   │   └── 4
 │   │       ├── 032410032628.dat
-│   │       ├── 032410032655.dat
+│   │       └── 032410032655.dat
 ```
 2. Open `program.ipynb` and set the appropriate data folder path in the second cell by passing it to `Manager()`. For example, if you want to analyze folder ***2*** inside ***pfoa***, set `Manager()` as follows:
 ```python
@@ -39,6 +39,8 @@ manager = Manager(r"25.04.15/pfoa/2")
 ```
 
 3. Cells can be run with `Shift + Enter`. Run the cells in `program.ipynb` from top to bottom — execution order matters. Or, you can simply click ***Restart*** → ***Run All***.
+
+4. When the third cell is executed, a graph appears in the browser. You can scroll through the graph using the mouse wheel, and once you've gone through the entire graph, the interaction ends and the analysis data is saved in the `analysis` folder.
 
 
 ## How to set parameters
